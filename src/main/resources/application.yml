@@ -1,0 +1,8 @@
+server:
+  port: 8182
+
+grpc:
+  client:
+    customer-service:
+      address: static://localhost:9090
+      negotiationType: plaintext
