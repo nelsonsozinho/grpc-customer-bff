@@ -26,7 +26,7 @@ public class CustomerGrpcClient {
         final List<Customer> customers = this.customerStub.findCustomer(request)
                 .getCustomersList()
                 .stream()
-                .map(c -> new Customer(UUID.fromString(c.getId()), c.getName(), c.getLastName(), c.getEmail(), null))
+                .map(c -> new Customer(UUID.fromString(c.getId()), c.getFirstName(), c.getLastName(), c.getEmail(), null))
                 .toList();
 
         return customers.stream().findFirst();

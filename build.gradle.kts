@@ -60,7 +60,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
-	implementation("br.com.shire42:proto-service:1.0.2")
+	implementation("br.com.shire42:proto-service:1.0.7")
 
 
 	implementation("net.devh:grpc-client-spring-boot-starter:$springBootGrpc")
